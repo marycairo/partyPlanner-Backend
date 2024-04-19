@@ -1,11 +1,11 @@
-package grupo_4.partyplannerbackend
+package com.example.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class PartyPlannerBackendApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-    runApplication<PartyPlannerBackendApplication>(*args)
+    runApplication<DemoApplication>(*args)
 }

@@ -1,4 +1,4 @@
-package grupo_4.partyplannerbackend.domain
+package com.example.demo.Domain
 
 enum class Categoria {
     ENTRETENIMIENTO, // DJS , MUSICA, KAROKE MESITA DE POOL ETC

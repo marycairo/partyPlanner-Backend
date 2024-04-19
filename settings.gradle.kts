@@ -1,1 +1,1 @@
-rootProject.name = "partyPlannerBackend"
+rootProject.name = "demo"
