@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.2.4"
+    id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.23"
     kotlin("plugin.spring") version "1.9.23"
@@ -19,7 +19,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-hateoas")
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
@@ -35,8 +34,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-devtools")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.0")
-    implementation("org.uqbar-project:geodds-xtend:1.0.3")
     implementation("org.springframework.boot:spring-boot-starter")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
